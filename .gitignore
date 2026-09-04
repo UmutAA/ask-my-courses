@@ -20,6 +20,7 @@ chroma_data/
 
 # Data and evaluation outputs
 data/raw/
+streamlit_data
 eval/results/
 *.log
 
