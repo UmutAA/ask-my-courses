@@ -38,18 +38,16 @@ Python, FastAPI, Streamlit, Chroma for vector storage, sentence transformers for
 ```
 ask-my-courses/
   data/
-    raw/              original course documents
-  eval/
-    golden_set.json   hand written question and answer pairs used for evaluation
-    results/          saved evaluation runs for each pipeline stage
+    raw/              made-up course documents
   src/
     ingest.py         parsing and chunking
-    embed.py          embedding and vector store setup
-    retrieve.py        hybrid search and reranking
-    tools.py           external API integrations
-    api.py             FastAPI backend
-  app.py                Streamlit frontend
+    embedding.py      embedding and vector store setup
+    generator.py      result generating with LLM call
+  app.py              Streamlit frontend
   README.md
+  .gitignore
+  requirements.txt
+  .env.example
 ```
 
 ## Setup
@@ -64,6 +62,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Copy '.env.example' file or change it's name to '.env'
 Add your API keys to a .env file.
 
 ```
