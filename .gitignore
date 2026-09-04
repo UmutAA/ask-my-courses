@@ -1,0 +1,35 @@
+# Environments
+venv/
+env/
+.venv/
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+
+# Vector store and local databases
+chroma/
+*.sqlite3
+*.db
+
+# Data and evaluation outputs
+data/raw/
+eval/results/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
