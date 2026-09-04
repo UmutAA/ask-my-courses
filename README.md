@@ -2,6 +2,10 @@
 
 A retrieval augmented generation system built over university course materials. It answers questions using syllabi, lecture slides, and assignment documents, and shows exactly which source each answer came from.
 
+## Problem statement
+ 
+University students juggle scattered course materials across dozens of PDFs and slide decks, and finding a specific policy, deadline, or topic often means digging through files instead of getting a direct answer. This bot answers questions from students in a specific course, such as when a topic is covered, what a policy states, or when an assignment is due, by retrieving the answer directly from the actual syllabus, slides, and assignment sheets for that course rather than requiring them to search through documents manually.
+
 ## Why this project exists
 
 Most RAG demos stop at "it retrieves something and answers." This project treats retrieval quality as something to measure and improve, not assume. Every major design choice in this repo, including chunk size, search strategy, and reranking, was tested against a hand built evaluation set rather than picked by guesswork.
