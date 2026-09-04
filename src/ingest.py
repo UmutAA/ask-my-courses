@@ -17,7 +17,7 @@ def load_pdf(file_name: str, file_path: str = None) -> str:
             for page in pdf.pages:
                 extracted = page.extract_text()
                 if extracted:
-                    text_content += extracted + " "
+                    text_context += extracted + " "
             
     except FileNotFoundError:
         print("The file does not exist.")

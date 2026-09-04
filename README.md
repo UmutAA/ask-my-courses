@@ -39,15 +39,17 @@ Python, FastAPI, Streamlit, Chroma for vector storage, sentence transformers for
 ask-my-courses/
   data/
     raw/              made-up course documents
+  eval/
+    known_issues.md
   src/
-    ingest.py         parsing and chunking
-    embedding.py      embedding and vector store setup
+    ingest.py         pdf loading and chunking
+    embedding.py      embedding and vector store and vector query
     generator.py      result generating with LLM call
   app.py              Streamlit frontend
   README.md
   .gitignore
   requirements.txt
-  .env.example
+  .env.example        example .env file to fill with API keys
 ```
 
 ## Setup
