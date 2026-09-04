@@ -1,6 +1,6 @@
 # Ask My Courses
 
-A retrieval augmented generation system built over university course materials. It answers questions using syllabi, lecture slides, and assignment documents, and shows exactly which source each answer came from.
+A retrieval augmented generation system built over made-up university course materials. It answers questions using syllabi, lecture slides, and assignment documents, and shows exactly which source each answer came from.
 
 ## Problem statement
  
