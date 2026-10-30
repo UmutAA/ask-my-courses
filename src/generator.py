@@ -1,5 +1,4 @@
 from google import genai
-from google.genai import types
 
 def create_prompt(chunks: list[str], question: str) -> str:
     """
@@ -11,7 +10,7 @@ def create_prompt(chunks: list[str], question: str) -> str:
 
     return prompt
 
-def generate_answer(prompt: str, client: genai.Client, model_name: str) -> str:
+def generate_answer(prompt: str, client: genai.Client, model_name: str) -> str | None:
     """
     Generates an answer using the Google GenAI SDK models endpoint.
     """
